@@ -1,0 +1,28 @@
+If you experince issues when building this source code, please follow this instructions below
+
+
+In your android studio create a new androidx app activity sample project with
+
+App Name:- SleepToEarn
+Package Name:- com.sleeptoearn
+Minimum Sdk:- 21
+Maximum Sdk:- 34
+Version:- 1.0
+Version code:- 1
+Programming language:- Java/Xml
+Java version:- 8,9,10 and up
+
+Please make sure its an androidx project you created.
+
+Then check if you have the dependencies in your build.gradle file else add it in the build.gradle file
+
+implementation 'androidx.appcompat:appcompat:1.2.0'
+implementation 'com.google.android.material:material:1.4.0'
+
+Then sync the project and download the appropiate dependencies.
+
+Then in the new sample project you created navigate to the main folder of the project that is SleepToEarn >> app >> src >> main
+Then delete the sample project main folder and copy this project main folder into it then sync the project,
+    and build and run the project. it will successfully run without errors.
+
+	
