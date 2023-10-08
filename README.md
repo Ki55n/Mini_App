@@ -23,3 +23,8 @@ https://www.figma.com/file/C3k4D6XJiscsfVBgxbyp4k/Untitled?node-id=0%3A1&mode=de
 
 # Set Hour Time DialogFragment
 ![超级截屏_20231008_095127](https://github.com/Ki55n/Mini_App/assets/94205435/325298fb-2400-4da5-8f1c-7270d2c3e7c0)
+
+
+
+
+# The video explaining the functionalities of the app is in the sleepToEarn_app_functionalites.zip file, you will have to unzip it to see the video file
