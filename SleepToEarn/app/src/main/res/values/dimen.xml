@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topLeftRadius">16dp</dimen>
+    <dimen name="topRightRadius">16dp</dimen>
+    <dimen name="bottomLeftRadius">16dp</dimen>
+    <dimen name="bottomRightRadius">16dp</dimen>
+</resources>

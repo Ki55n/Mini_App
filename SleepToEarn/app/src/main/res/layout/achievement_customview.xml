@@ -1,0 +1,99 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cardview_full_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:orientation="vertical"
+		app:cardElevation="10dp"
+		app:cardCornerRadius="16dp">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#2E3A4A"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/bg_img"
+				android:layout_width="130dp"
+				android:layout_height="match_parent"
+				android:background="@drawable/achievement_img_3"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical" />
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/achievement_text_container"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="6dp"
+					android:orientation="vertical"
+					android:background="@drawable/rounded_corner">
+					<TextView
+						android:id="@+id/achievement_text"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Sleeping beauty"
+						android:textSize="18sp"
+						android:textColor="#FFFFFF"
+						android:singleLine="true" />
+					<TextView
+						android:id="@+id/achievement_description"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="6dp"
+						android:text="Achieve 7"
+						android:textSize="14sp"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/progress_bar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:background="#222E3A"
+					android:orientation="horizontal">
+					<ProgressBar
+						android:id="@+id/achievement_progress"
+						android:focusable="false"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:indeterminate="false"
+						style="?android:progressBarStyleHorizontal"
+						android:progressDrawable="@drawable/custom_progress" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievement_done_container"
+					android:layout_width="90dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:padding="6dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:background="@drawable/rounded_corner">
+					<TextView
+						android:id="@+id/achievement_count"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0/7"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#5B9ED9" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</androidx.cardview.widget.CardView>
+</LinearLayout>

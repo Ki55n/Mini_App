@@ -1,0 +1,169 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#293340"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:id="@+id/action_bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:src="@drawable/ic_arrow_back_white"
+			android:scaleType="center" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:padding="8dp"
+				android:text="NiceSleep"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/option"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_more_vert_white"
+			android:scaleType="center" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/background"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="@drawable/background"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:padding="8dp"
+				android:text="SleepCoin"
+				android:textSize="25sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<ImageView
+				android:id="@+id/img_coin"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/icon2"
+				android:scaleType="fitXY" />
+			<TextView
+				android:id="@+id/sleepCoin_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="0"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/materialbutton1"
+				android:layout_width="180dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Spend"
+				android:textSize="14sp"
+				android:textColor="#FFFFFF"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+				app:backgroundTint="#263440"
+				app:cornerRadius="16dp"
+				style="@style/Widget.MaterialComponents.Button" />
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/materialbutton2"
+				android:layout_width="180dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Achievements"
+				android:textSize="14sp"
+				android:textColor="#FFFFFF"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+				app:backgroundTint="#263440"
+				app:cornerRadius="16dp"
+				style="@style/Widget.MaterialComponents.Button" />
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/materialbutton3"
+				android:layout_width="180dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="My pets"
+				android:textSize="14sp"
+				android:textColor="#FFFFFF"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+				app:backgroundTint="#263440"
+				app:cornerRadius="16dp"
+				style="@style/Widget.MaterialComponents.Button" />
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:padding="8dp"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:background="@drawable/design_bar_chart_container">
+				<LinearLayout
+					android:id="@+id/linear5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Sleep Time"
+						android:textSize="16sp"
+						android:textColor="#FFFFFF"
+						android:layout_weight="1" />
+					<ImageView
+						android:id="@+id/option2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/ic_more_vert_white"
+						android:scaleType="center" />
+				</LinearLayout>
+				<com.github.mikephil.charting.charts.BarChart
+					android:id="@+id/barChart"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:orientation="horizontal" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
